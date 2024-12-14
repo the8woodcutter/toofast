@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>⭒✯TooFast⭒Vip✯</title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="TooFast.vip XMPP Web Chats!"/>
+    <meta name="author" content="Dude that made ConverseJS - Modded by The 8 WoodCutter!" />
+    <meta name="keywords" content="xmppworld webchat converse.js toofast.vip packets.cc forkbomb.xyz chunkzwarez.xyz the8woodcutter.sh" />
+
+    <link rel="shortcut icon" type="image/png" href="../favicon.png"/>
+
+<style>
+#time p {
+  font-weight: bolder;
+  color: black;
+  background-color: lawngreen;
+  font-size: 22px;
+  line-height: 19px;
+  border-bottom: 2px solid darkred;
+  margin: 0 0 0 0;
+  padding: 0 3px 1px 3px;
+}
+h4 {
+  font-size: 36px;
+  line-height: 33px;
+  margin: 0 0 0 0;
+  padding: 6px 3px 1px 3px;
+  font-weight: bolder;
+  border-bottom: 3px dotted black;
+}
+h5 {
+  font-size: 27px;
+  line-height: 23px;
+  margin: 0 0 0 0;
+  padding: 6px 3px 1px 3px;
+  font-weight: bold;
+  border-bottom: 2px dotted black;
+}
+h6 {
+  font-size: 8px;
+  line-height: 5px;
+  margin: 0 0 0 0;
+  padding: 6px 3px 1px 3px;
+  font-weight: normal;
+  border-bottom: 1px dotted black;
+}
+hr {
+  border: dotted 1.7px #3dd821;
+  width: 98%;
+  height: 2.8px;
+  /* Set the hr color */
+  color: #122;  /* old IE */
+  background-color: #011;  /* Modern Browsers */
+}
+</style>
+</head>
+<body>
+<hr/>
+<h4>Current Server Time:</h4>
+<p id="time"></p>
+<h5>Current Messages:</h5>
+<p> ...  maybe one day again we'll have something here ...  </p>
+<br/>
+<h6>
+  <center>
+    <a href='conversejs/'>  ⭑✦ WebChat! ✦⭑⭑  </a>
+    <a href='conversejs/'>  ⭑✦ WebChat! ✦⭑⭑  </a>
+    <a href='conversejs/'>  ⭑✦ WebChat! ✦⭑⭑  </a>
+    <a href='conversejs/'>  ⭑✦ WebChat! ✦⭑⭑  </a>
+    <a href='conversejs/'>  ⭑✦ WebChat! ✦⭑⭑  </a>
+    <a href='conversejs/'>  ⭑✦ WebChat! ✦⭑⭑  </a>
+    <a href='conversejs/'>  ⭑✦ WebChat! ✦⭑⭑  </a>
+  </center>
+</h6>
+<hr/>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+var timestamp = '<?=time();?>';
+function updateTime(){
+  $('#time').html(Date(timestamp));
+  timestamp++;
+}
+$(function(){
+  setInterval(updateTime, 1000);
+});
+</script>
+</html>
